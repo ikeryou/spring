@@ -28,6 +28,10 @@ class Top extends Entry
     @_motionA()
     @_motionB()
     @_motionC()
+    @_motionD()
+    @_motionE()
+    @_motionF()
+    @_motionG()
 
 
 
@@ -49,7 +53,7 @@ class Top extends Entry
 
     Tween.a($('.motionB'), {
       x:[0, window.innerWidth * @_dist]
-    }, @_duration, 1, Elastic.easeOut.config(1, 0.75), null, null, @_motionB)
+    }, @_duration, 1, Elastic.easeOut.config(1, 1), null, null, @_motionB)
 
 
 
@@ -60,7 +64,51 @@ class Top extends Entry
 
     Tween.a($('.motionC'), {
       x:[0, window.innerWidth * @_dist]
-    }, @_duration, 1, Elastic.easeOut.config(1, 0.5), null, null, @_motionC)
+    }, @_duration, 1, Elastic.easeOut.config(1, 0.9), null, null, @_motionC)
+
+
+
+  # -----------------------------------------------
+  #
+  # -----------------------------------------------
+  _motionD: =>
+
+    Tween.a($('.motionD'), {
+      x:[0, window.innerWidth * @_dist]
+    }, @_duration, 1, Elastic.easeOut.config(1, 0.8), null, null, @_motionD)
+
+
+
+  # -----------------------------------------------
+  #
+  # -----------------------------------------------
+  _motionE: =>
+
+    Tween.a($('.motionE'), {
+      x:[0, window.innerWidth * @_dist]
+    }, @_duration, 1, Elastic.easeOut.config(1, 0.75), null, null, @_motionE)
+
+
+
+  # -----------------------------------------------
+  #
+  # -----------------------------------------------
+  _motionF: =>
+
+    Tween.a($('.motionF'), {
+      x:[0, window.innerWidth * @_dist]
+    }, @_duration, 1, Elastic.easeOut.config(1, 0.7), null, null, @_motionF)
+
+
+
+  # -----------------------------------------------
+  #
+  # -----------------------------------------------
+  _motionG: =>
+
+    Tween.a($('.motionG'), {
+      x:[0, window.innerWidth * @_dist]
+    }, @_duration, 1, Elastic.easeOut.config(1, 0.6), null, null, @_motionG)
 
 
 
